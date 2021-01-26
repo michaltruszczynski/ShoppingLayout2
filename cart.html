@@ -13,74 +13,127 @@
 
     <!-- Custom StyleSheet -->
     <link rel="stylesheet" href="./css/styles.css" />
-    <title>Document</title>
+    <title>Your Cart</title>
 </head>
 
 <body>
-
-    <header id="home" class="header">
-        <nav class="nav">
-            <div class="navigation container">
-                <div class="logo">
-                    <h1>Codevo</h1>
-                </div>
-                <div class="menu">
-                    <div class="top-nav">
-                        <div class="logo">
-                            <h1>Codevo</h1>
-                        </div>
-                        <div class="close">
-                            <i class="bx bx-x"></i>
-                        </div>
-                    </div>
-                    <ul class="nav-list">
-                        <li class="nav-item">
-                            <a href="#home" class="nav-link">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="products.html" class="nav-link">Products</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#about" class="nav-link">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#contact" class="nav-link">Contact</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#account" class="nav-link">Account</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="cart.html" class="nav-link icon"><i class="bx bx-shopping-bag"></i></a>
-                        </li>
-                    </ul>
-                </div>
-                <a href="cart.html" class="cart-icon">
-                    <i class="bx bx-shopping-bag"></i>
-                </a>
-                <div class="hamburger">
-                    <i class="bx bx-menu"></i>
-                </div>
+    <nav class="nav">
+        <div class="navigation container">
+            <div class="logo">
+                <h1>Codevo</h1>
             </div>
-        </nav>
-
-        <img src="./images/banner.png" class="hero-img" alt="">
-
-        <div class="hero-content">
-            <h2><span class="discount">70%</span> SALE OFF</h2>
-            <h1>
-                <span>Summer Vibes</span>
-            </h1>
-            <a href="#" class="btn">Shop Now</a>
+            <div class="menu">
+                <div class="top-nav">
+                    <div class="logo">
+                        <h1>Codevo</h1>
+                    </div>
+                    <div class="close">
+                        <i class="bx bx-x"></i>
+                    </div>
+                </div>
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="products.html" class="nav-link">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#account" class="nav-link">Account</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="cart.html" class="nav-link icon"><i class="bx bx-shopping-bag"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <a href="cart.html" class="cart-icon">
+                <i class="bx bx-shopping-bag"></i>
+            </a>
+            <div class="hamburger">
+                <i class="bx bx-menu"></i>
+            </div>
         </div>
-    </header>
-
+    </nav>
 
     <!-- Main -->
 
     <main>
-
-
-
+        <div class="container-md cart">
+            <table>
+                <tr>
+                    <th>Product</th>
+                    <th>Quantity</th>
+                    <th>Subtotal</th>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="cart-info">
+                            <img src="./images/pic1.jpg" alt="">
+                            <div>
+                                <p>Boy's T-Shirt</p>
+                                <span>Price: $50.00</span>
+                                <br>
+                                <a href="#">remove</a>
+                            </div>
+                        </div>
+                    </td>
+                    <td><input type="text" value="1" min="1"></td>
+                    <td>$50.00</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="cart-info">
+                            <img src="./images/pic2.jpg" alt="">
+                            <div>
+                                <p>Boy's T-Shirt</p>
+                                <span>Price: $60.00</span>
+                                <br>
+                                <a href="#">remove</a>
+                            </div>
+                        </div>
+                    </td>
+                    <td><input type="text" value="1" min="1"></td>
+                    <td>$60.00</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="cart-info">
+                            <img src="./images/pic3.jpg" alt="">
+                            <div>
+                                <p>Boy's T-Shirt</p>
+                                <span>Price: $70.00</span>
+                                <br>
+                                <a href="#">remove</a>
+                            </div>
+                        </div>
+                    </td>
+                    <td><input type="text" value="1" min="1"></td>
+                    <td>$70.00</td>
+                </tr>
+            </table>
+            <div class="total-price">
+                <table>
+                    <tr>
+                        <td>Subtotal</td>
+                        <td>$200</td>
+                    </tr>
+                    <tr>
+                        <td>Tax</td>
+                        <td>$50</td>
+                    </tr>
+                    <tr>
+                        <td>Total</td>
+                        <td>$250</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
     </main>
 
     <!-- Footer -->
